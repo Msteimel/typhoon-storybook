@@ -1,0 +1,10 @@
+@import '01-foundation/foundation-import';
+@import '02-theme/theme-import';
+
+@import '03-sub-themes/storybook-code';
+@import '03-sub-themes/color-main';
+@import '03-sub-themes/color-display';
+
+#root {
+  padding: 2rem;
+}

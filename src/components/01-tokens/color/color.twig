@@ -1,0 +1,34 @@
+{% for hue in colorPalette %}
+  <h3>
+    {{ hue.colorStatus }}
+  </h3>
+  <ul class="lib-color-palette--list lib-mb-4xl">
+    {% for color in hue.colors %}
+      <li class="lib-color-palette--item lib-bg-{{ color.tokenValue }} {{
+        color.textColor
+        }} lib-px-3xl lib-py-xs lib-br4">
+        <div>
+          <p>
+            <strong>{{ color.name }}</strong>
+          </p>
+        </div>
+        <div>
+          <p>
+            ${{ color.tokenValue }}
+          </p>
+          <p>
+            {{ color.hsla }}
+          </p>
+        </div>
+        <div class="lib-ta-right">
+          <p>
+            {{ color.text }}
+          </p>
+          <p>
+            {{ color.background }}
+          </p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}

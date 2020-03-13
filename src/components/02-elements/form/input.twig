@@ -1,0 +1,81 @@
+<div class="lib-input--wrap">
+  <div class="lib-input lib-input--field">
+    {% if input == 'text' %}
+    <input type="{{input}}" name="name" placeholder=" " id="name" required />
+    <label class="lib-input--label" for="name">
+      Name*
+    </label>
+    {% elseif input == 'tel' %}
+      <input type="tel" name="phone-number" placeholder=" " id="phone-number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+        required />
+      <label class="lib-input--label" for="phone-number">
+        Phone Number*
+      </label>
+    {% elseif input == 'email' %}
+      <input type="email" name="email" placeholder=" " id="email" required />
+      <label class="lib-input--label" for="email">
+        Email Address*
+      </label>
+    {% elseif input == 'textarea' %}
+      <textarea placeholder=" " name="comment" id="comment" rows="5" /></textarea>
+      <label class="lib-input--label" for="comment">
+        Comment
+      </label>
+    {% elseif input == 'checkbox' %}
+      <p>Your arsenal (pick all that apply):</p>
+      <div class="lib-input lib-input--checkbox">
+        <input type="checkbox" id="sword" name="sword">
+        <label for="sword">Sword</label>
+      </div>
+      <div class="lib-input lib-input--checkbox">
+        <input type="checkbox" id="battle-axe" name="battle-axe">
+        <label for="battle-axe">Battle Axe</label>
+      </div>
+      <div class="lib-input lib-input--checkbox">
+        <input type="checkbox" id="shiv" name="shiv">
+        <label for="shiv">Shiv</label>
+      </div>
+      <div class="lib-input lib-input--checkbox">
+        <input type="checkbox" id="fire" name="fire">
+        <label for="fire">Fire</label>
+      </div>
+    {% elseif input == 'radio' %}
+      <p class="lib-mt-0">What's your favorite Monster</p>
+      <div class="lib-input lib-input--radio">
+        <input type="radio" id="kraken" name="monster" />
+        <label for="kraken">
+          Kraken
+        </label>
+      </div>
+       <div class="lib-input lib-input--radio">
+        <input type="radio" id="mind-flayer" name="monster" />
+        <label for="mind-flayer">
+          Mind Flayer
+        </label>
+      </div>
+      <div class="lib-input lib-input--radio">
+        <input type="radio" id="dragon" name="monster" />
+        <label for="dragon">
+          Dragon
+        </label>
+      </div>
+      {% elseif input == 'select' %}
+      <div class="lib-input--select">
+        <select name="pets" id="pet-select" required>
+          <option value="" disabled selected>
+            --Please choose an option--
+          </option>
+          <option value="dog">
+            Dog
+          </option>
+          <option value="cat">
+            Cat
+          </option>
+        </select>
+        <label for="pet-select">
+          Choose a pet:*
+        </label>
+      </div>
+    {% endif %}
+  </div>
+</div>
