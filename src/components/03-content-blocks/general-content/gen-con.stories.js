@@ -119,9 +119,13 @@ stories.add('Link Abstracts Block', () =>
     LinkAbstract({
       headline: text('Block Headline', Faker.name.jobTitle()),
       link: Faker.random.words(),
+      abstract: Faker.lorem.sentences(),
       link1: Faker.random.words(),
+      abstract1: Faker.lorem.sentences(),
       link2: Faker.random.words(),
+      abstract2: Faker.lorem.sentences(),
       link3: Faker.random.words(),
+      abstract3: Faker.lorem.sentences(),
     })
   )
 );
