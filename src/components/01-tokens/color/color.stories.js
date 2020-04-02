@@ -21,6 +21,7 @@ stories.add('Primary', () =>
           {
             name: 'Red-50',
             tokenValue: 'red-50',
+            hex: 'FFF5F5',
             hsla: 'hsla(360, 94, 98, 1)',
             text: '.lib-text-red-50',
             background: '.lib-bg-red-50',
@@ -29,6 +30,7 @@ stories.add('Primary', () =>
           {
             name: 'Red-100',
             tokenValue: 'red-100',
+            hex: 'FEE6E6',
             hsla: 'hsla(360, 94, 95, 1)',
             text: '.lib-text-red-100',
             background: '.lib-bg-red-100',
@@ -37,6 +39,7 @@ stories.add('Primary', () =>
           {
             name: 'Red-200',
             tokenValue: 'red-200',
+            hex: 'F9AAAC',
             hsla: 'hsla(358, 86, 82, 1)',
             text: '.lib-text-red-200',
             background: '.lib-bg-red-200',
@@ -45,6 +48,7 @@ stories.add('Primary', () =>
           {
             name: 'Red-300',
             tokenValue: 'red-300',
+            hex: 'F0666A',
             hsla: 'hsla(358, 82, 67, 1)',
             text: '.lib-text-red-300',
             background: '.lib-bg-red-300',
@@ -53,6 +57,7 @@ stories.add('Primary', () =>
           {
             name: 'Red-400',
             tokenValue: 'red-400',
+            hex: 'E23C44',
             hsla: 'hsla(357, 74, 56, 1)',
             text: '.lib-text-red-400',
             background: '.lib-bg-red-400',
@@ -61,6 +66,7 @@ stories.add('Primary', () =>
           {
             name: 'Red-500',
             tokenValue: 'red-500',
+            hex: 'C8102E',
             hsla: 'hsla(350, 85, 42, 1)',
             text: '.lib-text-red-500',
             background: '.lib-bg-red-500',
@@ -69,6 +75,7 @@ stories.add('Primary', () =>
           {
             name: 'Red-600',
             tokenValue: 'red-600',
+            hex: 'B0112C',
             hsla: 'hsla(350, 82, 38, 1)',
             text: '.lib-text-red-600',
             background: '.lib-bg-red-600',
@@ -77,6 +84,7 @@ stories.add('Primary', () =>
           {
             name: 'Red-700',
             tokenValue: 'red-700',
+            hex: '921127',
             hsla: 'hsla(350, 79, 32, 1)',
             text: '.lib-text-red-700',
             background: '.lib-bg-red-700',
@@ -85,6 +93,7 @@ stories.add('Primary', () =>
           {
             name: 'Red-800',
             tokenValue: 'red-800',
+            hex: '7B0A1D',
             hsla: 'hsla(350, 85, 26, 1)',
             text: '.lib-text-red-800',
             background: '.lib-bg-red-800',
@@ -93,6 +102,7 @@ stories.add('Primary', () =>
           {
             name: 'Red-900',
             tokenValue: 'red-900',
+            hex: '610517',
             hsla: 'hsla(348, 90, 20, 1)',
             text: '.lib-text-red-900',
             background: '.lib-bg-red-900',
@@ -113,6 +123,7 @@ stories.add('Secondary', () =>
           {
             name: 'Yellow-50',
             tokenValue: 'yellow-50',
+            hex: 'FFFCEC',
             hsla: 'hsla(50, 99, 96, 1)',
             text: '.lib-text-yellow-50',
             background: '.lib-bg-yellow-50',
@@ -121,6 +132,7 @@ stories.add('Secondary', () =>
           {
             name: 'Yellow-100',
             tokenValue: 'yellow-100',
+            hex: 'FFF8D6',
             hsla: 'hsla(50, 99, 92, 1)',
             text: '.lib-text-yellow-100',
             background: '.lib-bg-yellow-100',
@@ -129,6 +141,7 @@ stories.add('Secondary', () =>
           {
             name: 'Yellow-200',
             tokenValue: 'yellow-200',
+            hex: 'FDF4B4',
             hsla: 'hsla(52, 96, 85, 1)',
             text: '.lib-text-yellow-200',
             background: '.lib-bg-yellow-200',
@@ -137,6 +150,7 @@ stories.add('Secondary', () =>
           {
             name: 'Yellow-300',
             tokenValue: 'yellow-300',
+            hex: 'FCE882',
             hsla: 'hsla(50, 96, 75, 1)',
             text: '.lib-text-yellow-300',
             background: '.lib-bg-yellow-300',
@@ -145,6 +159,7 @@ stories.add('Secondary', () =>
           {
             name: 'Yellow-400',
             tokenValue: 'yellow-400',
+            hex: 'FCDA69',
             hsla: 'hsla(46, 96, 70, 1)',
             text: '.lib-text-yellow-400',
             background: '.lib-bg-yellow-400',
@@ -153,6 +168,7 @@ stories.add('Secondary', () =>
           {
             name: 'Yellow-500',
             tokenValue: 'yellow-500',
+            hex: 'F1BE48',
             hsla: 'hsla(42, 86, 61, 1)',
             text: '.lib-text-yellow-500',
             background: '.lib-bg-yellow-500',
@@ -161,6 +177,7 @@ stories.add('Secondary', () =>
           {
             name: 'Yellow-600',
             tokenValue: 'yellow-600',
+            hex: 'EFA70B',
             hsla: 'hsla(41, 91, 49, 1)',
             text: '.lib-text-yellow-600',
             background: '.lib-bg-yellow-600',
@@ -169,6 +186,7 @@ stories.add('Secondary', () =>
           {
             name: 'Yellow-700',
             tokenValue: 'yellow-700',
+            hex: 'CF8002',
             hsla: 'hsla(30, 98, 41, 1)',
             text: '.lib-text-yellow-700',
             background: '.lib-bg-yellow-700',
@@ -177,6 +195,7 @@ stories.add('Secondary', () =>
           {
             name: 'Yellow-800',
             tokenValue: 'yellow-800',
+            hex: 'AC4E06',
             hsla: 'hsla(26, 97, 30, 1)',
             text: '.lib-text-yellow-800',
             background: '.lib-bg-yellow-800',
@@ -185,6 +204,7 @@ stories.add('Secondary', () =>
           {
             name: 'Yellow-900',
             tokenValue: 'yellow-900',
+            hex: '7E2A07',
             hsla: 'hsla(15, 96, 19, 1)',
             text: '.lib-text-yellow-900',
             background: '.lib-bg-yellow-900',
@@ -205,7 +225,8 @@ stories.add('Accent', () =>
           {
             name: 'Blue-50',
             tokenValue: 'blue-50',
-            hsla: 'hsla(50, 99, 96, 1)',
+            hex: 'F0F9FE',
+            hsla: 'hsla(201, 88, 97, 1)',
             text: '.lib-text-blue-50',
             background: '.lib-bg-blue-50',
             textColor: '',
@@ -213,7 +234,8 @@ stories.add('Accent', () =>
           {
             name: 'Blue-100',
             tokenValue: 'blue-100',
-            hsla: 'hsla(50, 99, 92, 1)',
+            hex: 'E7F5FE',
+            hsla: 'hsla(202, 92, 95, 1)',
             text: '.lib-text-blue-100',
             background: '.lib-bg-blue-100',
             textColor: '',
@@ -221,7 +243,8 @@ stories.add('Accent', () =>
           {
             name: 'Blue-200',
             tokenValue: 'blue-200',
-            hsla: 'hsla(52, 96, 85, 1)',
+            hex: 'A6DEFC',
+            hsla: 'hsla(201, 93, 82, 1)',
             text: '.lib-text-blue-200',
             background: '.lib-bg-blue-200',
             textColor: '',
@@ -229,7 +252,8 @@ stories.add('Accent', () =>
           {
             name: 'Blue-300',
             tokenValue: 'blue-300',
-            hsla: 'hsla(50, 96, 75, 1)',
+            hex: '45C2FC',
+            hsla: 'hsla(199, 97, 63, 1)',
             text: '.lib-text-blue-300',
             background: '.lib-bg-blue-300',
             textColor: '',
@@ -237,7 +261,8 @@ stories.add('Accent', () =>
           {
             name: 'Blue-400',
             tokenValue: 'blue-400',
-            hsla: 'hsla(46, 96, 70, 1)',
+            hex: '18B0F7',
+            hsla: 'hsla(199, 93, 53, 1)',
             text: '.lib-text-blue-400',
             background: '.lib-bg-blue-400',
             textColor: '',
@@ -245,7 +270,8 @@ stories.add('Accent', () =>
           {
             name: 'Blue-500',
             tokenValue: 'blue-500',
-            hsla: 'hsla(42, 86, 61, 1)',
+            hex: '14A0E6',
+            hsla: 'hsla(200, 84, 49, 1)',
             text: '.lib-text-blue-500',
             background: '.lib-bg-blue-500',
             textColor: '',
@@ -253,7 +279,8 @@ stories.add('Accent', () =>
           {
             name: 'Blue-600',
             tokenValue: 'blue-600',
-            hsla: 'hsla(41, 91, 49, 1)',
+            hex: '0D87C9',
+            hsla: 'hsla(201, 88, 42, 1)',
             text: '.lib-text-blue-600',
             background: '.lib-bg-blue-600',
             textColor: 'lib-text-white',
@@ -261,7 +288,8 @@ stories.add('Accent', () =>
           {
             name: 'Blue-700',
             tokenValue: 'blue-700',
-            hsla: 'hsla(30, 98, 41, 1)',
+            hex: '006BA5',
+            hsla: 'hsla(201, 100, 32, 1)',
             text: '.lib-text-blue-700',
             background: '.lib-bg-blue-700',
             textColor: 'lib-text-white',
@@ -269,7 +297,8 @@ stories.add('Accent', () =>
           {
             name: 'Blue-800',
             tokenValue: 'blue-800',
-            hsla: 'hsla(26, 97, 30, 1)',
+            hex: '054771',
+            hsla: 'hsla(203, 92, 23, 1)',
             text: '.lib-text-blue-800',
             background: '.lib-bg-blue-800',
             textColor: 'lib-text-white',
@@ -277,7 +306,8 @@ stories.add('Accent', () =>
           {
             name: 'Blue-900',
             tokenValue: 'blue-900',
-            hsla: 'hsla(15, 96, 19, 1)',
+            hex: '042D49',
+            hsla: 'hsla(204, 90, 15, 1)',
             text: '.lib-text-blue-900',
             background: '.lib-bg-blue-900',
             textColor: 'lib-text-white',
@@ -297,7 +327,8 @@ stories.add('Neutral', () =>
           {
             name: 'Warm Grey-50',
             tokenValue: 'warm-grey-50',
-            hsla: 'hsla(50, 99, 96, 1)',
+            hex: 'F6F6F3',
+            hsla: 'hsla(47, 13, 96, 1)',
             text: '.lib-text-warm-grey-50',
             background: '.lib-bg-warm-grey-50',
             textColor: '',
@@ -305,7 +336,8 @@ stories.add('Neutral', () =>
           {
             name: 'Warm Grey-100',
             tokenValue: 'warm-grey-100',
-            hsla: 'hsla(50, 99, 92, 1)',
+            hex: 'E8E6E1',
+            hsla: 'hsla(47, 13, 90, 1)',
             text: '.lib-text-warm-grey-100',
             background: '.lib-bg-warm-grey-100',
             textColor: '',
@@ -313,7 +345,8 @@ stories.add('Neutral', () =>
           {
             name: 'Warm Grey-200',
             tokenValue: 'warm-grey-200',
-            hsla: 'hsla(52, 96, 85, 1)',
+            hex: 'D3D0C4',
+            hsla: 'hsla(47, 15, 80, 1)',
             text: '.lib-text-warm-grey-200',
             background: '.lib-bg-warm-grey-200',
             textColor: '',
@@ -321,7 +354,8 @@ stories.add('Neutral', () =>
           {
             name: 'Warm Grey-300',
             tokenValue: 'warm-grey-300',
-            hsla: 'hsla(50, 96, 75, 1)',
+            hex: 'B8B4A7',
+            hsla: 'hsla(47, 11, 69, 1)',
             text: '.lib-text-warm-grey-300',
             background: '.lib-bg-warm-grey-300',
             textColor: '',
@@ -329,7 +363,8 @@ stories.add('Neutral', () =>
           {
             name: 'Warm Grey-400',
             tokenValue: 'warm-grey-400',
-            hsla: 'hsla(46, 96, 70, 1)',
+            hex: 'A3A093',
+            hsla: 'hsla(47, 8, 61, 1)',
             text: '.lib-text-warm-grey-400',
             background: '.lib-bg-warm-grey-400',
             textColor: '',
@@ -337,7 +372,8 @@ stories.add('Neutral', () =>
           {
             name: 'Warm Grey-500',
             tokenValue: 'warm-grey-500',
-            hsla: 'hsla(42, 86, 61, 1)',
+            hex: '848071',
+            hsla: 'hsla(47, 8, 48, 1)',
             text: '.lib-text-warm-grey-500',
             background: '.lib-bg-warm-grey-500',
             textColor: 'lib-text-white',
@@ -345,7 +381,8 @@ stories.add('Neutral', () =>
           {
             name: 'Warm Grey-600',
             tokenValue: 'warm-grey-600',
-            hsla: 'hsla(41, 91, 49, 1)',
+            hex: '625F52',
+            hsla: 'hsla(47, 9, 35, 1)',
             text: '.lib-text-warm-grey-600',
             background: '.lib-bg-warm-grey-600',
             textColor: 'lib-text-white',
@@ -353,7 +390,8 @@ stories.add('Neutral', () =>
           {
             name: 'Warm Grey-700',
             tokenValue: 'warm-grey-700',
-            hsla: 'hsla(30, 98, 41, 1)',
+            hex: '504D40',
+            hsla: 'hsla(47, 11, 28, 1)',
             text: '.lib-text-warm-grey-700',
             background: '.lib-bg-warm-grey-700',
             textColor: 'lib-text-white',
@@ -361,7 +399,8 @@ stories.add('Neutral', () =>
           {
             name: 'Warm Grey-800',
             tokenValue: 'warm-grey-800',
-            hsla: 'hsla(26, 97, 30, 1)',
+            hex: '423F33',
+            hsla: 'hsla(47, 13, 23, 1)',
             text: '.lib-text-warm-grey-800',
             background: '.lib-bg-warm-grey-800',
             textColor: 'lib-text-white',
@@ -369,7 +408,8 @@ stories.add('Neutral', () =>
           {
             name: 'Warm Grey-900',
             tokenValue: 'warm-grey-900',
-            hsla: 'hsla(15, 96, 19, 1)',
+            hex: '27251D',
+            hsla: 'hsla(47, 15, 13, 1)',
             text: '.lib-text-warm-grey-900',
             background: '.lib-bg-warm-grey-900',
             textColor: 'lib-text-white',
@@ -382,7 +422,8 @@ stories.add('Neutral', () =>
           {
             name: 'Grey-50',
             tokenValue: 'grey-50',
-            hsla: 'hsla(50, 99, 96, 1)',
+            hex: 'F2F2F2',
+            hsla: 'hsla(0, 0, 95, 1)',
             text: '.lib-text-grey-50',
             background: '.lib-bg-grey-50',
             textColor: '',
@@ -390,7 +431,8 @@ stories.add('Neutral', () =>
           {
             name: 'Grey-100',
             tokenValue: 'grey-100',
-            hsla: 'hsla(50, 99, 92, 1)',
+            hex: 'E1E1E1',
+            hsla: 'hsla(0, 0, 88, 1)',
             text: '.lib-text-grey-100',
             background: '.lib-bg-grey-100',
             textColor: '',
@@ -398,7 +440,8 @@ stories.add('Neutral', () =>
           {
             name: 'Grey-200',
             tokenValue: 'grey-200',
-            hsla: 'hsla(52, 96, 85, 1)',
+            hex: 'CFCFCF',
+            hsla: 'hsla(0, 0, 81, 1)',
             text: '.lib-text-grey-200',
             background: '.lib-bg-grey-200',
             textColor: '',
@@ -406,7 +449,8 @@ stories.add('Neutral', () =>
           {
             name: 'Grey-300',
             tokenValue: 'grey-300',
-            hsla: 'hsla(50, 96, 75, 1)',
+            hex: 'B1B1B1',
+            hsla: 'hsla(0, 0, 69, 1)',
             text: '.lib-text-grey-300',
             background: '.lib-bg-grey-300',
             textColor: '',
@@ -414,7 +458,8 @@ stories.add('Neutral', () =>
           {
             name: 'Grey-400',
             tokenValue: 'grey-400',
-            hsla: 'hsla(46, 96, 70, 1)',
+            hex: '9E9E9E',
+            hsla: 'hsla(0, 0, 62, 1)',
             text: '.lib-text-grey-400',
             background: '.lib-bg-grey-400',
             textColor: '',
@@ -422,7 +467,8 @@ stories.add('Neutral', () =>
           {
             name: 'Grey-500',
             tokenValue: 'grey-500',
-            hsla: 'hsla(42, 86, 61, 1)',
+            hex: '7E7E7E',
+            hsla: 'hsla(0, 0, 49, 1)',
             text: '.lib-text-grey-500',
             background: '.lib-bg-grey-500',
             textColor: 'lib-text-white',
@@ -430,7 +476,8 @@ stories.add('Neutral', () =>
           {
             name: 'Grey-600',
             tokenValue: 'grey-600',
-            hsla: 'hsla(41, 91, 49, 1)',
+            hex: '626262',
+            hsla: 'hsla(0, 0, 38, 1)',
             text: '.lib-text-grey-600',
             background: '.lib-bg-grey-600',
             textColor: 'lib-text-white',
@@ -438,7 +485,8 @@ stories.add('Neutral', () =>
           {
             name: 'Grey-700',
             tokenValue: 'grey-700',
-            hsla: 'hsla(30, 98, 41, 1)',
+            hex: '515151',
+            hsla: 'hsla(0, 0, 32, 1)',
             text: '.lib-text-grey-700',
             background: '.lib-bg-grey-700',
             textColor: 'lib-text-white',
@@ -446,7 +494,8 @@ stories.add('Neutral', () =>
           {
             name: 'Grey-800',
             tokenValue: 'grey-800',
-            hsla: 'hsla(26, 97, 30, 1)',
+            hex: '3B3B3B',
+            hsla: 'hsla(0, 0, 23, 1)',
             text: '.lib-text-grey-800',
             background: '.lib-bg-grey-800',
             textColor: 'lib-text-white',
@@ -454,7 +503,8 @@ stories.add('Neutral', () =>
           {
             name: 'Grey-900',
             tokenValue: 'grey-900',
-            hsla: 'hsla(15, 96, 19, 1)',
+            hex: '222222',
+            hsla: 'hsla(0, 0, 13, 1)',
             text: '.lib-text-grey-900',
             background: '.lib-bg-grey-900',
             textColor: 'lib-text-white',
@@ -474,7 +524,8 @@ stories.add('Support', () =>
           {
             name: 'Green-50',
             tokenValue: 'green-50',
-            hsla: 'hsla(50, 99, 96, 1)',
+            hex: 'E3F9E5',
+            hsla: 'hsla(125, 65, 93, 1)',
             text: '.lib-text-green-50',
             background: '.lib-bg-green-50',
             textColor: '',
@@ -482,7 +533,8 @@ stories.add('Support', () =>
           {
             name: 'Green-100',
             tokenValue: 'green-100',
-            hsla: 'hsla(50, 99, 92, 1)',
+            hex: 'C1F2C7',
+            hsla: 'hsla(127, 65, 85, 1)',
             text: '.lib-text-green-100',
             background: '.lib-bg-green-100',
             textColor: '',
@@ -490,7 +542,8 @@ stories.add('Support', () =>
           {
             name: 'Green-200',
             tokenValue: 'green-200',
-            hsla: 'hsla(52, 96, 85, 1)',
+            hex: '91E697',
+            hsla: 'hsla(124, 63, 74, 1)',
             text: '.lib-text-green-200',
             background: '.lib-bg-green-200',
             textColor: '',
@@ -498,7 +551,8 @@ stories.add('Support', () =>
           {
             name: 'Green-300',
             tokenValue: 'green-300',
-            hsla: 'hsla(50, 96, 75, 1)',
+            hex: '51CA58',
+            hsla: 'hsla(123, 53, 55, 1)',
             text: '.lib-text-green-300',
             background: '.lib-bg-green-300',
             textColor: '',
@@ -506,7 +560,8 @@ stories.add('Support', () =>
           {
             name: 'Green-400',
             tokenValue: 'green-400',
-            hsla: 'hsla(46, 96, 70, 1)',
+            hex: '31B237',
+            hsla: 'hsla(123, 57, 45, 1)',
             text: '.lib-text-green-400',
             background: '.lib-bg-green-400',
             textColor: '',
@@ -514,7 +569,8 @@ stories.add('Support', () =>
           {
             name: 'Green-500',
             tokenValue: 'green-500',
-            hsla: 'hsla(42, 86, 61, 1)',
+            hex: '189A1A',
+            hsla: 'hsla(122, 73, 35, 1)',
             text: '.lib-text-green-500',
             background: '.lib-bg-green-500',
             textColor: '',
@@ -522,7 +578,8 @@ stories.add('Support', () =>
           {
             name: 'Green-600',
             tokenValue: 'green-600',
-            hsla: 'hsla(41, 91, 49, 1)',
+            hex: '13861B',
+            hsla: 'hsla(124, 75, 30, 1)',
             text: '.lib-text-green-600',
             background: '.lib-bg-green-600',
             textColor: 'lib-text-white',
@@ -530,7 +587,8 @@ stories.add('Support', () =>
           {
             name: 'Green-700',
             tokenValue: 'green-700',
-            hsla: 'hsla(30, 98, 41, 1)',
+            hex: '0E7817',
+            hsla: 'hsla(125, 79, 26, 1)',
             text: '.lib-text-green-700',
             background: '.lib-bg-green-700',
             textColor: 'lib-text-white',
@@ -538,7 +596,8 @@ stories.add('Support', () =>
           {
             name: 'Green-800',
             tokenValue: 'green-800',
-            hsla: 'hsla(26, 97, 30, 1)',
+            hex: '07600E',
+            hsla: 'hsla(125, 86, 20, 1)',
             text: '.lib-text-green-800',
             background: '.lib-bg-green-800',
             textColor: 'lib-text-white',
@@ -546,7 +605,8 @@ stories.add('Support', () =>
           {
             name: 'Green-900',
             tokenValue: 'green-900',
-            hsla: 'hsla(15, 96, 19, 1)',
+            hex: '014807',
+            hsla: 'hsla(125, 97, 14, 1)',
             text: '.lib-text-green-900',
             background: '.lib-bg-green-900',
             textColor: 'lib-text-white',

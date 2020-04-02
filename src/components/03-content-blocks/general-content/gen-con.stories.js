@@ -157,13 +157,34 @@ stories.add('Quote Ribbon Block', () =>
   )
 );
 
-stories.add('All', () =>
-  componentOutput(
-    TextBlock({
-      content: text('Text', 'Text!'),
+stories.add(
+  'All',
+  () =>
+    LeadBlock({
+      headline: Faker.name.jobTitle(),
+      para1: Faker.lorem.paragraph(),
     }),
-    ImgBlock({
-      content: text('Text', 'Image!'),
-    })
-  )
+  TextBlock({
+    headline: Faker.name.jobTitle(),
+    para1: Faker.lorem.paragraph(),
+    header: 'h3',
+    headline2: Faker.name.jobTitle(),
+    para2: Faker.lorem.paragraph(),
+  }),
+  ImgBlock({
+    imgSide: 'lib-text-img--right',
+    headline: Faker.name.jobTitle(),
+    img: imageSm,
+    alt: Faker.random.words(),
+    header: 'h3',
+    headline2: Faker.name.jobTitle(),
+  }),
+  ImgBlock({
+    imgSide: 'lib-text-img--left',
+    headline: Faker.name.jobTitle(),
+    img: imageSm,
+    alt: Faker.random.words(),
+    header: 'h3',
+    headline2: Faker.name.jobTitle(),
+  })
 );
