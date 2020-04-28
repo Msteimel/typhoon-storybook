@@ -16,12 +16,17 @@ const stories = storiesOf('Tokens/Headings', module).addDecorator(
   withA11y
 );
 
+const underline = {
+  Yes: 'lib-heading-underline',
+  No: '',
+};
+
 stories.add('Headings', () =>
   componentOutput(
     Headings({
       text: text('Content', Faker.name.jobTitle()),
       header: select('Header', ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'], 'h1'),
-      underline: boolean('Underline?', false),
+      underline: select('Underline?', underline, ''),
     })
   )
 );
