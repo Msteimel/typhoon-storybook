@@ -2,6 +2,7 @@ import Accordion from './accordion.twig';
 import { storiesOf } from '@storybook/html';
 import { withKnobs, select, text } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
+import { useEffect } from '@storybook/client-api';
 
 // Utilities
 import { componentOutput } from '@utils';
@@ -25,9 +26,11 @@ const stories = storiesOf('Elements/Accordion', module).addDecorator(
 //   );
 
 stories.add('Accordion', () =>
-  componentOutput(
-    Accordion({
-      content: text('Text', 'Button'),
-    })
-  )
+  useEffect(() => {
+    componentOutput(
+      Accordion({
+        content: text('Text', 'Button'),
+      })
+    );
+  }, [])
 );
