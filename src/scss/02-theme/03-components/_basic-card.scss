@@ -361,7 +361,21 @@ $blue-basic-card-text-blue: $blue-700;
   }
 }
 
-.lib-basic-card--yellow.lib-basic-card--image {
+.lib-basic-card.lib-basic-card--yellow.lib-basic-card--image {
+  .lib-basic-card--link {
+    .lib-basic-card--category,
+    .lib-basic-card--title {
+      color: $white;
+
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+    }
+  }
+}
+
+.lib-basic-card.lib-basic-card--blue.lib-basic-card--image {
   .lib-basic-card--link {
     .lib-basic-card--category,
     .lib-basic-card--title {
