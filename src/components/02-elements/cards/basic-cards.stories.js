@@ -1,8 +1,10 @@
 import { storiesOf } from '@storybook/html';
 import BasicCard from './basic-cards.twig';
-import AdvanceCard from './advance-cards.twig';
+import BasicCardImage from './basic-cards--image.twig';
 import { withKnobs, text, select } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
+
+import image from '@img/basic-card--image.jpg';
 
 // Utilities
 import { componentOutput } from '@utils';
@@ -25,6 +27,21 @@ const basicCards = {
 stories.add('Basic Card', () =>
   componentOutput(
     BasicCard({
+      class: select('Card Color', basicCards, 'lib-basic-card'),
+      link: '#',
+      ariaText: text('Aria Text', Faker.company.bsAdjective()),
+      category: text('Category', Faker.random.word()),
+      title: text('Title', Faker.random.words()),
+      desc: text('Description', Faker.lorem.sentences()),
+      cta: text('Call to Action', 'Learn More'),
+    })
+  )
+);
+
+stories.add('Basic Card w/Image', () =>
+  componentOutput(
+    BasicCardImage({
+      img: image,
       class: select('Card Color', basicCards, 'lib-basic-card'),
       link: '#',
       ariaText: text('Aria Text', Faker.company.bsAdjective()),
