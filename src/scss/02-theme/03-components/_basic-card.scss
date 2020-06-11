@@ -61,7 +61,6 @@ $blue-basic-card-text-blue: $blue-700;
     height: 100%;
     text-decoration: none;
     box-shadow: $basic-card-box-shadow;
-    border-left: 4px solid $basic-card-border-color;
     overflow: hidden;
     transition: background-color 0.3s ease-in, border-color 0.3s ease-in,
       box-shadow 0.3s ease-in;
@@ -104,6 +103,10 @@ $blue-basic-card-text-blue: $blue-700;
         background-color: $basic-card-dark-tri-hover;
       }
 
+      .lib-basic-card--text-wrap {
+        border-color: $basic-card-border-color-hover;
+      }
+
       .lib-basic-card--category {
         color: $basic-card-text-color-hover;
       }
@@ -130,7 +133,9 @@ $blue-basic-card-text-blue: $blue-700;
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: $space-xl $space-lg $space-2xl $space-2xl;
+    padding: $space-xl $space-lg $space-2xl $space-xl;
+    border-left: 4px solid $basic-card-border-color;
+    transition: border-color 0.3s ease-in;
   }
 
   .lib-basic-card--category {
@@ -183,7 +188,6 @@ $blue-basic-card-text-blue: $blue-700;
 .lib-basic-card.lib-basic-card--yellow {
   .lib-basic-card--link {
     box-shadow: $basic-card-box-shadow;
-    border-left: 4px solid $yellow-basic-card-border-color;
 
     &::before {
       background-color: $yellow-basic-card-light-tri;
@@ -212,6 +216,10 @@ $blue-basic-card-text-blue: $blue-700;
         color: $yellow-basic-card-text-color-hover;
       }
 
+      .lib-basic-card--text-wrap {
+        border-color: $yellow-basic-card-border-color-hover;
+      }
+
       .lib-basic-card--title {
         color: $yellow-basic-card-text-color-hover;
       }
@@ -224,6 +232,10 @@ $blue-basic-card-text-blue: $blue-700;
         color: $yellow-basic-card-text-color-hover;
       }
     }
+  }
+
+  .lib-basic-card--text-wrap {
+    border-left: 4px solid $yellow-basic-card-border-color;
   }
 
   .lib-basic-card--category {
@@ -239,7 +251,6 @@ $blue-basic-card-text-blue: $blue-700;
 .lib-basic-card.lib-basic-card--blue {
   .lib-basic-card--link {
     box-shadow: $basic-card-box-shadow;
-    border-left: 4px solid $blue-basic-card-border-color;
 
     &::before {
       background-color: $blue-basic-card-light-tri;
@@ -264,6 +275,10 @@ $blue-basic-card-text-blue: $blue-700;
         background-color: $blue-basic-card-dark-tri-hover;
       }
 
+      .lib-basic-card--text-wrap {
+        border-color: $blue-basic-card-border-color-hover;
+      }
+
       .lib-basic-card--category {
         color: $blue-basic-card-text-color-hover;
       }
@@ -282,6 +297,10 @@ $blue-basic-card-text-blue: $blue-700;
     }
   }
 
+  .lib-basic-card--text-wrap {
+    border-left: 4px solid $blue-basic-card-border-color;
+  }
+
   .lib-basic-card--category {
     color: $blue-basic-card-text-blue;
   }
@@ -289,4 +308,58 @@ $blue-basic-card-text-blue: $blue-700;
   .lib-basic-card--cta {
     color: $blue-basic-card-text-blue;
   }
+}
+
+//
+
+.lib-basic-card--image {
+  .lib-basic-card--link {
+    &::before,
+    &::after {
+      content: '';
+      width: 0;
+    }
+  }
+
+  .lib-basic-card--image-wrap {
+    position: relative;
+
+    .lib-basic-card--text-wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: auto;
+      border: none;
+      padding-bottom: $space-xs;
+    }
+  }
+
+  figure {
+    position: relative;
+    padding-top: percentage(411/575);
+    overflow: hidden;
+    margin: 0;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .lib-basic-card--text-wrap {
+    position: relative;
+    padding-top: $space-md;
+  }
+
+  .lib-basic-card--category,
+  .lib-basic-card--title {
+    color: $white;
+  }
+}
+
+.lib-basic-card--yellow .lib-basic-card--image {
 }
