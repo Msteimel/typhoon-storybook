@@ -120,7 +120,7 @@ $blue-basic-card-text-blue: $blue-700;
         color: $basic-card-text-color-hover;
       }
 
-      .lib-basic-card--cta {
+      .lib-cta {
         color: $basic-card-text-color-hover;
 
         &::after {
@@ -156,36 +156,12 @@ $blue-basic-card-text-blue: $blue-700;
     transition: color 0.3s ease-in;
   }
 
-  .lib-basic-card--cta--wrap {
+  .lib-cta--wrap {
     margin-top: auto;
   }
 
-  .lib-basic-card--cta {
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-    padding-right: $space-xl;
-    padding-bottom: 0.1rem;
-    margin: 0;
+  .lib-cta {
     color: $basic-card-text-red;
-    transition: color 0.3s ease-in;
-
-    &::before,
-    &::after {
-      @include vert_center;
-      font-family: 'Fontawesome';
-      font-size: $fs-xs;
-      content: '\f054';
-      transition: right 0.3s;
-    }
-
-    &::before {
-      right: 0.5rem;
-    }
-
-    &::after {
-      right: 1rem;
-    }
   }
 }
 
@@ -233,7 +209,7 @@ $blue-basic-card-text-blue: $blue-700;
         color: $yellow-basic-card-text-color-hover;
       }
 
-      .lib-basic-card--cta {
+      .lib-cta {
         color: $yellow-basic-card-text-color-hover;
       }
     }
@@ -247,7 +223,7 @@ $blue-basic-card-text-blue: $blue-700;
     color: $yellow-basic-card-text-yellow;
   }
 
-  .lib-basic-card--cta {
+  .lib-cta {
     color: $yellow-basic-card-text-yellow;
   }
 }
@@ -296,7 +272,7 @@ $blue-basic-card-text-blue: $blue-700;
         color: $blue-basic-card-text-color-hover;
       }
 
-      .lib-basic-card--cta {
+      .lib-cta {
         color: $blue-basic-card-text-color-hover;
       }
     }
@@ -310,7 +286,7 @@ $blue-basic-card-text-blue: $blue-700;
     color: $blue-basic-card-text-blue;
   }
 
-  .lib-basic-card--cta {
+  .lib-cta {
     color: $blue-basic-card-text-blue;
   }
 }

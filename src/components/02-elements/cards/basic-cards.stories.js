@@ -1,10 +1,12 @@
 import { storiesOf } from '@storybook/html';
 import BasicCard from './basic-cards.twig';
 import BasicCardImage from './basic-cards--image.twig';
+import NewsCardLead from './news-card--lead.twig';
 import { withKnobs, text, select } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 
 import image from '@img/basic-card--image.jpg';
+import newsImage from '@img/news-card.jpg';
 
 // Utilities
 import { componentOutput } from '@utils';
@@ -53,9 +55,17 @@ stories.add('Basic Card w/Image', () =>
   )
 );
 
-// export const advance_card = () =>
-//   AdvanceCard({
-//     content: text('Content', 'Primary'),
-//     id: 'test',
-//     classes: 'lib-button',
-//   });
+stories.add('News Card Lead', () =>
+  componentOutput(
+    NewsCardLead({
+      img: newsImage,
+      link: '#',
+      ariaText: text('Aria Text', Faker.company.bsAdjective()),
+      category: text('Category', Faker.random.word()),
+      title: text('Title', Faker.random.words()),
+      // roughly 300 characters
+      desc: text('Description', Faker.lorem.words(20)),
+      cta: text('Call to Action', 'Read Article'),
+    })
+  )
+);
