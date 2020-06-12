@@ -20,14 +20,14 @@ const stories = storiesOf('Elements/Cards', module).addDecorator(
 
 const basicCards = {
   Default: 'lib-basic-card',
-  Yellow: 'lib-basic-card--yellow',
-  Blue: 'lib-basic-card--blue',
+  Yellow: 'lib-basic-card--yellow lib-basic-card',
+  Blue: 'lib-basic-card--blue lib-basic-card',
 };
 
 stories.add('Basic Card', () =>
   componentOutput(
     BasicCard({
-      class: select('Card Color', basicCards, 'lib-basic-card'),
+      class: select('Card Color', basicCards),
       link: '#',
       ariaText: text('Aria Text', Faker.company.bsAdjective()),
       category: text('Category', Faker.random.word()),
