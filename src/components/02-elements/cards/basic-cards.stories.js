@@ -2,6 +2,7 @@ import { storiesOf } from '@storybook/html';
 import BasicCard from './basic-cards.twig';
 import BasicCardImage from './basic-cards--image.twig';
 import NewsCardLead from './news-card--lead.twig';
+import NewsCardBasic from './news-card--basic.twig';
 import { withKnobs, text, select } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 
@@ -59,6 +60,21 @@ stories.add('News Card Lead', () =>
   componentOutput(
     NewsCardLead({
       img: newsImage,
+      link: '#',
+      ariaText: text('Aria Text', Faker.company.bsAdjective()),
+      category: text('Category', Faker.random.word()),
+      title: text('Title', Faker.random.words()),
+      // roughly 300 characters
+      desc: text('Description', Faker.lorem.words(20)),
+      cta: text('Call to Action', 'Read Article'),
+    })
+  )
+);
+
+stories.add('News Card Basic', () =>
+  componentOutput(
+    NewsCardBasic({
+      img: image,
       link: '#',
       ariaText: text('Aria Text', Faker.company.bsAdjective()),
       category: text('Category', Faker.random.word()),

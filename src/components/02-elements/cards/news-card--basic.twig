@@ -1,0 +1,26 @@
+<div class="lib-news-card--basic lib-br4 lib-mb-lg sm:lib-mb-3xl">
+  <a href="#" class="lib-news-card--link">
+    <div class="lib-news-card--image-wrap lib-mr-sm xs:lib-mb-md">
+      <figure>
+        <img src="{{ img }}" alt="ALT" />
+      </figure>
+    </div>
+    <span class="lib-aria-text">{{ ariaText }}</span>
+    <div class="lib-news-card--text">
+      <span class="lib-news-card--category">{{ category }}</span>
+      <h3 class="lib-news-card--title lib-mt-2xs lib-mb-md lib-text-lg">
+        {{ title }}
+      </h3>
+      <div class="lib-news-card--desc">
+        <p class="lib-text-sm">
+          {{ desc }}
+        </p>
+        {#                              <div class="lib-cta--wrap">
+              <p class="lib-cta">
+                {{ card.linkText }}
+              </p>
+            </div> #}
+      </div>
+    </div>
+  </a>
+</div>
