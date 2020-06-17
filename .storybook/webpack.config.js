@@ -18,6 +18,12 @@ module.exports = async ({ config, mode }) => {
     include: path.resolve(__dirname, '../'),
   });
 
+  config.module.rules.push({
+    test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+    loaders: ['file-loader'],
+    include: path.resolve(__dirname, '../'),
+  });
+
   config.resolve.alias['@scss'] = path.resolve(__dirname, '../src/scss');
   config.resolve.alias['@utils'] = path.resolve(__dirname, '../utils');
   config.resolve.alias['@js'] = path.resolve(__dirname, '../js');
