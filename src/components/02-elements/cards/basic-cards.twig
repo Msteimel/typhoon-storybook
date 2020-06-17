@@ -2,7 +2,11 @@
   <a href="{{ link }}/index.html" class="lib-basic-card--link">
     <span class="lib-aria-text">{{ ariaText }}</span>
     <div class="lib-basic-card--text-wrap">
-      <span class="lib-basic-card--category lib-mb-xs">{{ category }}</span>
+      {% if icon %}
+        <span class="lib-icon-letter lib-mb-md"></span>
+      {% else %}
+        <span class="lib-basic-card--category lib-mb-xs">{{ category }}</span>
+      {% endif %}
       <h3 class="lib-basic-card--title">
         {{ title }}
       </h3>

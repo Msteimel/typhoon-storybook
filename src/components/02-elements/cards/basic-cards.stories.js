@@ -3,7 +3,7 @@ import BasicCard from './basic-cards.twig';
 import BasicCardImage from './basic-cards--image.twig';
 import NewsCardLead from './news-card--lead.twig';
 import NewsCardBasic from './news-card--basic.twig';
-import { withKnobs, text, select } from '@storybook/addon-knobs';
+import { withKnobs, text, select, boolean } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 
 import image from '@img/basic-card--image.jpg';
@@ -33,6 +33,7 @@ stories.add('Basic Card', () =>
       class: select('Card Color', basicCards),
       link: '#',
       ariaText: text('Aria Text', Faker.company.bsAdjective()),
+      icon: boolean('Icon?', true),
       category: text('Category', Faker.random.word()),
       title: text('Title', Faker.random.words()),
       desc: text('Description', Faker.lorem.sentences()),

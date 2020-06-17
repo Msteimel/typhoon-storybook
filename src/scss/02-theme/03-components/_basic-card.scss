@@ -44,7 +44,7 @@ $blue-basic-card-text-blue: $blue-700;
 }
 
 .lib-basic-card {
-  width: $card-width;
+  max-width: $card-width;
 
   @include media-breakpoint-down(sm) {
     width: $card-width-mobile;
@@ -104,6 +104,10 @@ $blue-basic-card-text-blue: $blue-700;
         background-color: $basic-card-dark-tri-hover;
       }
 
+      [class*='lib-icon-'] {
+        color: $basic-card-text-color-hover;
+      }
+
       .lib-basic-card--text-wrap {
         border-color: $basic-card-border-color-hover;
       }
@@ -128,6 +132,12 @@ $blue-basic-card-text-blue: $blue-700;
         }
       }
     }
+  }
+
+  [class*='lib-icon-'] {
+    font-size: $fs-2xl;
+    color: $basic-card-text-red;
+    transition: color 0.3s ease-in;
   }
 
   .lib-basic-card--text-wrap {
@@ -161,7 +171,31 @@ $blue-basic-card-text-blue: $blue-700;
   }
 
   .lib-cta {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding-right: $space-xl;
+    padding-bottom: 0.1rem;
+    margin: 0;
     color: $basic-card-text-red;
+    transition: color 0.3s ease-in;
+
+    &::before,
+    &::after {
+      @include vert_center;
+      font-family: 'Fontawesome';
+      font-size: $fs-xs;
+      content: '\f054';
+      transition: right 0.3s;
+    }
+
+    &::before {
+      right: 0.5rem;
+    }
+
+    &::after {
+      right: 1rem;
+    }
   }
 }
 
@@ -193,6 +227,10 @@ $blue-basic-card-text-blue: $blue-700;
         background-color: $yellow-basic-card-dark-tri-hover;
       }
 
+      [class*='lib-icon-'] {
+        color: $yellow-basic-card-text-color-hover;
+      }
+
       .lib-basic-card--category {
         color: $yellow-basic-card-text-color-hover;
       }
@@ -213,6 +251,12 @@ $blue-basic-card-text-blue: $blue-700;
         color: $yellow-basic-card-text-color-hover;
       }
     }
+  }
+
+  [class*='lib-icon-'] {
+    font-size: $fs-2xl;
+    color: $yellow-basic-card-text-yellow;
+    transition: color 0.3s ease-in;
   }
 
   .lib-basic-card--text-wrap {
@@ -256,6 +300,10 @@ $blue-basic-card-text-blue: $blue-700;
         background-color: $blue-basic-card-dark-tri-hover;
       }
 
+      [class*='lib-icon-'] {
+        color: $blue-basic-card-text-color-hover;
+      }
+
       .lib-basic-card--text-wrap {
         border-color: $blue-basic-card-border-color-hover;
       }
@@ -276,6 +324,12 @@ $blue-basic-card-text-blue: $blue-700;
         color: $blue-basic-card-text-color-hover;
       }
     }
+  }
+
+  [class*='lib-icon-'] {
+    font-size: $fs-2xl;
+    color: $blue-basic-card-text-blue;
+    transition: color 0.3s ease-in;
   }
 
   .lib-basic-card--text-wrap {
