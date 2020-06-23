@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -s ./static -p 9001",
-    "build-storybook": "build-storybook",
-    "build": "build-storybook -s ./static -c .storybook -o build"
+    "build": "build-storybook -s ./static -c .storybook -o .out"
   },
   "keywords": [],
   "author": "",
