@@ -43,3 +43,24 @@ $br-list: (
     border-radius: $radius;
   }
 }
+
+/*================================================
+			Border Radius classes
+==================================================*/
+// br == border-radius
+
+// creates classes like `.lib-br4`
+
+// $bs-list: (
+//   'none': none,
+//   'dotted': dotted,
+//   'inset': inset,
+//   'dashed': dashed,
+//   'solid': solid,
+// );
+
+// @each $bs, $style in $bs-list {
+//   .lib-bs-#{$bs} {
+//     border-style: $style;
+//   }
+// }
